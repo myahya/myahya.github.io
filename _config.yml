@@ -1,3 +1,5 @@
 source:      _source
 destination: _deploy
 timezone: Europe/Berlin
+markdown: rdiscount
+pygments: true
