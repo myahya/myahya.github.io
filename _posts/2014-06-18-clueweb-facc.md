@@ -15,7 +15,7 @@ The original format in which the data was released does not seem to be available
 It is important to note that offsets are given in terms of _bytes_ and not characters, so this needs to be taken into consideration.
 
 ## ClueWeb
-ClueWeb, in both the 2009 and the 2012 versions is released in the WARC file format. In this format, each document has a WARC header (not to be confused with the HTTP header) and contents (including the HTTP header).
+ClueWeb, in both the 2009 and the 2012 versions, is released in the WARC file format. In this format, each document has a WARC header (not to be confused with the HTTP header) and contents (including the HTTP header).
 
 ```
 WARC/0.18
