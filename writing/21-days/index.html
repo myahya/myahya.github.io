@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+</head>
+
+											<h1 class="entry-title">علم نفسك البرمجة في عشرة أعوام</h1>
+
+			<div style="direction:rtl">
+<p style="text-align:center">
+بيتر نورفيج Peter Norvig</p>
+<hr/>
+<p>
+هذه ترجمة لمقال بعنوان &#8220;علم نفسك البرمجة في عشرة أعوام&#8221; (<a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.norvig.com/21-days.html']);" href="http://www.norvig.com/21-days.html">Teach Yourself Programming in Ten Years</a>) <a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.norvig.com/']);" href="http://www.norvig.com/">لبيتر نورفيج</a>، منسق البحث العلمي بشركة غوغل. لا تزال هذه الترجمة بحاجة لمزيد من التنقيح، لأية اقتراحات أو ملاحظات <a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.myahya.org/contact/']);" href="http://www.myahya.org/contact/">أرجو الإتصال بي</a>.<br/>آخر تحديث لهذه الصفحة: 24.2.07
+</p>
+<hr/>
+<h2>لم الجميع في عجلة من أمرهم؟
+</h2>
+<p>
+فور دخولك إلى أي مكتبة ستجد العديد من الكتب من قبيل &#8220;علم نفسك لغة Java سبعة أيام&#8221; جنبا إلى جنب مع كتب أخرى تعرض تعليمك Visual Basic و Windows و الإنترنت&#8230;خلال بضعة أيام أو ساعات. فقد قمت بإجراء <a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.amazon.com/exec/obidos/tg/browse/-/468558/104-5938873-6579160']);" href="http://www.amazon.com/exec/obidos/tg/browse/-/468558/104-5938873-6579160"> البحث </a> التالي على موقع <a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.amazon.com/']);" href="http://www.amazon.com/">Amazon.com</a>:
+</p>
+<p class="english">
+<p><a href="http://www.amazon.com/exec/obidos/search-handle-url/ix=books&amp;rank=%2Bfeaturedrank&amp;fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20days%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&amp;sz=25&amp;pg=1/ref=s_b_np">  pubdate: after 1992 and title: days and<br/>
+      (title: learn or title: teach yourself)</a>
+</p>
+<p>
+و حصلت على 248 نتيجة. أول 78 نتيجة كانت كتب حاسوب أما النتيجة رقم 79 فكانت (<a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.amazon.com/exec/obidos/ASIN/0781802245/']);" href="http://www.amazon.com/exec/obidos/ASIN/0781802245/">Learn Bengali in 30 days</a>). عند استبدال كلمة &#8220;days/أيام&#8221; بكلمة <a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.amazon.com/exec/obidos/search-handle-url/ix=books&amp;rank=%2Bfeaturedrank&amp;fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20hours%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&amp;sz=25&amp;pg=3/ref=s_b_np']);" href="http://www.amazon.com/exec/obidos/search-handle-url/ix=books&amp;rank=%2Bfeaturedrank&amp;fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20hours%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&amp;sz=25&amp;pg=3/ref=s_b_np">&#8220;hours/ساعات&#8221;</a> فقد كانت النتيجة قريبة بشكل مذهل، فقد أرجع هذا البحث 253 كتابا. أول 77 منها كانت كتب حاسوب أما الكتاب الذي يليها فكان (<a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.amazon.com/exec/obidos/ASIN/0028638999/']);" href="http://www.amazon.com/exec/obidos/ASIN/0028638999/">Teach Yourself Grammar and Style in 24 Hours</a>) في المنزلة رقم 78. 96% من أول 200 كتاب أرجعها البحث كانت كتب حاسوب.</p>
+<p>
+الخلاصة هي إما أن الناس في عجلة من أمرهم للتعلم عن الحواسيب أو أن تعلم الحواسيب أسهل من تعلم أي شيء آخر. ليست هنالك أية كتب عن تعلم موسيقى بيتهوفن أو الفيزياء الكمية أو حتى تدريب الكلاب في بضعة أيام.
+</p>
+<p>
+لنحلل ما يمكن أن يعنيه عنوان من قبيل &#8220;<a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.amazon.com/exec/obidos/ISBN=1556225679/4094-7934802-027992']);" href="http://www.amazon.com/exec/obidos/ISBN=1556225679/4094-7934802-027992">تعلم لغة Pascal في سبعة أيام</a>&#8220;:
+</p>
+<ul>
+<li>
+<strong>تعلم</strong>: في ثلاثة أيام لن يتوفر لك ما يكفي من الوقت لكتابة برامج ذات قيمة لتتعلم من نجاحاتك و إخفاقاتك في كتابتها. لن يتوفر لك الوقت أيضا للعمل مع مبرمج خبير و فهم كيفية العيش في مثل هذه البيئة. باختصار، لن يتوفر لك من الوقت ما يسمح لتعلم أي شيء له قيمة. إذا، فهم يتحدثون فقط عن ألفة سطحية مع اللغة و ليس فهما عميقا لها. كما قال البابا ألكساندر: تعلم القليل هو أمر خطير.
+</li>
+<li>
+<strong>باسكال/Pascal</strong>: قد تستطيع خلال ثلاثة أيام تعلم النحو (syntax) الخاص بلغة Pascal (إذا كنت تعرف لغة برمجة أخرى)، إلا أنك لن تستطيع تعلم الكثير عن كيفية استخدام هذا النحو. باختصار، فإنك إذا كنت مبرمجا بلغة Basic فقد تستطيع تعلم برامج بأسلوب لغة Basic مستخدما النحو الخاص بلغة Pascal لكنك لن تستطيع تعلم إيجابيات و سلبيات لغة Pascal.إذا ما الفائدة من تعلم لغة برمجة بهذه الطريقة؟ يقول <a onclick="javascript:_gaq.push(['_trackPageview', '/out/www-pu.informatik.uni-tuebingen.de/users/klaeren/epigrams.html']);" href="http://www-pu.informatik.uni-tuebingen.de/users/klaeren/epigrams.html"> ألان بيرليس (Alan Perlis)</a> : &#8220;اللغة التي لا تغير الطريقة التي تفكر بها بالبرمجة لا تستحق-أي اللغة- أن تتعلمها&#8221;. أحدى الفوائد هي أنك قد تضطر لتعلم القليل من لغة Pascal (أو ربما Visual Basic أو JavaScript) لإنجاز مهمة محددة. لكنك في مثل هذة الحالة لا تتعلم كيفية البرمجة، و إنما كيفية إنجاز مهمة محددة.
+</li>
+<li>
+<strong>في ثلاثة أيام</strong>: للأسف، فإن هذا الوقت لا يكفي كما سيوضح القسم التالي.
+</li>
+</ul>
+<h2>
+تعلم البرمجة في عشرة أعوام<br/>
+</h2>
+<p>
+أثبت الباحثون (<a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.amazon.com/exec/obidos/ASIN/0805803092']);" href="http://www.amazon.com/exec/obidos/ASIN/0805803092">Hayes</a>, <a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.amazon.com/exec/obidos/ASIN/034531509X/']);" href="http://www.amazon.com/exec/obidos/ASIN/034531509X/">Bloom</a>) أنه يلزم عشرة أعوام تقريبا لتطوير الخبرة في أي من المجالات كلعب الشطرنج أو التأليف الموسيقي أو الرسم أو العزف على البيانو أو السباحة أو التنيس أو علم الأعصاب أو علم طبقات الأرض. لا يبدو أن هنالك أية طرق مختصرة، فحتى موتزارت، الذي كان أعجوبة موسيقية في سن الرابعة، استغرقه الأمر 13 سنة أخرى ليبدأ بإنتاج موسيقى عالمية رفيعة المستوى. أما في لون آخر من الموسيقى، فقد بدا أن فرقة البيتلز بدأت مسيرتها بسلسلة من الأغاني التي حققت المرتبة الأولى و ظهور على برنامج إد سوليفان (Ed Sullivan show) عام 1964. إلا أنهم كانوا يغنون في نواد صغيرة  بمدينتي ليفربول و هامبورج منذ عام 1957. و بالرغم من جاذبيتهم الكبيرة منذ البداية، إلا أن أول أغنية حققت لهم نجاحا باهرا (Sgt. Peppers)  صدرت عام 1967. سامويل جونسون (Samuel  Johnson) يعتقد أن الأمر يستغرق أكثر من عشر سنوات، فهو يقول: &#8220;التميز في أي مجال لا يمكن إدراكه إلا من خلال العمل الذي يتطلب عمر الإنسان كله، و لا يمكن إدراكه بأي ثمن أقل من ذلك&#8221;. أما تشاوسر (Chaucer) فيشكو من أن: &#8220;الحياة قصيرة و تعلم المهنة يتطلب وقتا كثيرا&#8221;.</p>
+<p>
+أما وصفتي للنجاح فهي كما يلي:
+</p>
+<ul>
+<li>
+أحب البرمجة لأنهك تجد فيها متعتة و احرص على أن يبقى الأمر ممتعا بحيث تكون مستعدا لإعطائه عشرة أعوام من حياتك.
+</li>
+<li>
+تحدث مع مبرمجين آخرين و اقرأ برامج لغيرك. و هما أمرا أهم من أي كتاب أو درس للبرمجة.
+</li>
+<li>
+برمج. أفضل طرق التعلم هي<a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.engines4ed.org/hyperbook/nodes/NODE-120-pg.html']);" href="http://www.engines4ed.org/hyperbook/nodes/NODE-120-pg.html"> التعلم عن الممارسة </a>، و إذا أردنا أن نعبر عن هذا الأمر بطريقة أفصح نقول: &#8220;لا يمكن أدراك درجة عالية من التميز في مجال معين من خلال طول ممارسته ، و إنما من الممكن التميز عن الطريق الجهد الذي يبذله الشخص عن وعي منه بقصد التحسن&#8221;. (<a onclick="javascript:_gaq.push(['_trackPageview', '/out/www2.umassd.edu/swpi/DesignInCS/expertise.html']);" href="http://www2.umassd.edu/swpi/DesignInCS/expertise.html">صفحة 336</a>). و &#8220;التعلم الأكثر فاعلية يتطلب: وجود مهام محددة تتناسب صعوبتها مع قدرات الشخص و وجود تقييم بناء  و فرص للتكرار و تصحيح الأخطاء&#8221;. (صفحة 20-21). يعد كتاب: <a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.amazon.com/exec/obidos/ASIN/0521357349']);" href="http://www.amazon.com/exec/obidos/ASIN/0521357349">Cognition in Practice: Mind, Mathematics, and Culture in Everyday Life</a> من المراجع المهمة لوجهة النظر هذه .
+</li>
+<li>
+إذا أردت، فبإمكانك أن تستثمر أربع سنوات في الجامعة و هو الأمر الذي سيعطيك القدرة على التنافس على بعض الوظائف التي تتطلب مؤهلات علمية. كما أنه سيزودك بفهم أعمق لهذا المجال. إلا أنك إذا لم تستمتع بالجامعة فبإمكانك-مع شيء من الإلتزام- الحصول على خبرات مشابهة. على كل حال، فإن التعلم عن طريق الكتب فقط لن يكون كافيا. يقول أريك رايموند (Eric Raymond) مؤلف The New Hacker&#8217;s Dictionary: &#8220;الحصول على درجة في علم الحاسوب  لن يجعل منك مبرمجا خبيرا مثلما أن دراسة الفراشي و الصباغ لن تجعل منك رساما خبيرا&#8221;. أحد أفضل المبرمجين الذين وظفتهم أنتج الكثير من <a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.xemacs.org/']);" href="http://www.xemacs.org/">البرامج</a> <a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.mozilla.org/']);" href="http://www.mozilla.org/"> المميزة</a> كما أن هنالك <a onclick="javascript:_gaq.push(['_trackPageview', '/out/groups.google.com/groups?q=alt.fan.jwz&amp;meta=site%3Dgroups']);" href="http://groups.google.com/groups?q=alt.fan.jwz&amp;meta=site%3Dgroups">مجموعة أخبار</a>عنه و قد جمع ما يكفي من الأسهم لشراء <a onclick="javascript:_gaq.push(['_trackPageview', '/out/en.wikipedia.org/wiki/DNA_Lounge']);" href="http://en.wikipedia.org/wiki/DNA_Lounge">ملهى ليلي</a> خاص به.
+</li>
+<li>
+اشتغل في مشاريع مع مبرمجين آخرين. كن أفضل المبرمجيين في بعض المشاريع؛ وكن الأسوء في البعض الآخر. عندما تكون الأفضل، فإنك سوف تختبر قدرتك لقيادة المشروع ولتلهم الآخرين برؤيتك(وجهة نظرك).أما عندما تكون الأسوء فأنك ستتعلم مما يفعله قادة المشروع(العباقرة)، وما لايحبون فعله (لأنهم سيجلعونك تفعل لهم ما يرغبون).
+</li>
+<li>
+إشتغل في مشاريع بعد مبرمجين آخرين و افهم برامج كتبها غيرك و اعمل على إصلاحها من دون وجودهم. فكر في كيفية تصميم برامجك لتجعل صيانتها أسهل لمن هم بعدك.
+</li>
+<li>
+تعلم على الأقل ست لغات للبرمجة. إجعل منها واحدة تدعم التجريد الصنفي (Class Abstraction)  كلغة Java  أو C++. و واحدة تدعم التجريد الوظيفي (Functional Abstraction) كلغة Lisp أو ML. و لغة تدعم التجريد النحوي (Syntactic Abstraction) كلغة Lisp و لغة تدعم الdeclarative specifications مثل Prolog أو C++ templates و لغة تدعم الcoroutines كلغة Icon أو Scheme و لغة تدعم التوازي (Parallelism) كلغة Sisal.
+</li>
+<li>
+تذكر أن هنالك &#8220;حاسوب&#8221; في &#8220;علم الحاسوب&#8221;. عليك أن تعرف كم من الوقت يلزم لتنفيذ تعليمة (Instruction) أو إحضار كلمة من الذاكرة -مع و بدون cache miss- أو كلمات متتالية من القرص أو التحرك إلى مكان جديد على القرص. (الأجوبة موجودة هنا)
+</li>
+<li>
+شارك في جهود توحيد اللغات(Standardization). قد يكون ذلك من خلال المشاركة في لجنة ANSI C++ أو عن طريق كمية الفراغ الذي ستتركه في أول كل سطر من برنامجك. في كلتا الحالتين فإنك تتعلم ما يحبه الآخرون في لغة معينة، كم يحبونه و لماذا.
+</li>
+<li>
+كن منطقيا بما فية الكفاية للإنسحاب من جهود توحيد اللغات بأسرع وقت.
+</li>
+</ul>
+<p>مع كل ما قيل، فإن المرء يتسائل كم من الممكن أن يطور نفسه من خلال قراءة الكتب فقط. قبل أن يولد ولدي الأول قمت بقراءة كل الكتب المتصلة بالأبوة و لكنني، و بالرغم من ذلك، شعرت بأنني لا أعرف شيئا. بعد ثلاثين شهرا، عندما كنت أنتظر قدوم ابني الثاني هل عدت إلى كل تلك الكتب؟ كلا. بل اعتمدت على خبرتي الشخصية و التي أثبتت أنها أنجع من آلاف الصفحات التي كتبها الخبراء.
+</p>
+<p>
+فريد بروكس (Fred Brooks) يصف في مقاله (<a onclick="javascript:_gaq.push(['_trackPageview', '/out/citeseer.nj.nec.com/context/7718/0']);" href="http://citeseer.nj.nec.com/context/7718/0">No Silver Bullets</a>) خطة من ثلاثة أقسام لإيجاد مصممي برامج ممتازين:
+</p>
+<ol>
+<li>
+<p>قم بتحديد أحسن مصمي برامج بشكل منهجي في أبكر وقت ممكن.
+</li>
+<li>
+عين معلما يكون مسؤولا عن تطوير ذوي الإمكانات و اتفظ بملفهم الوظيفي.
+</li>
+<li>
+وفر فرصا للمصممين الذين يتحسنون للتفاعل و تحفيز بعضهم البعض.
+</li>
+</ol>
+<p>
+هذا كله يفترض أن هنالك أشخاصا يمتلكون مزايا تجعلهم مصممي برامج ممتازين و هنا تصبح مهمتك أن تهتم بهم. ألان بيرليس (<a onclick="javascript:_gaq.push(['_trackPageview', '/out/www-pu.informatik.uni-tuebingen.de/users/klaeren/epigrams.html']);" href="http://www-pu.informatik.uni-tuebingen.de/users/klaeren/epigrams.html">Alan Perlis</a>) وضعها بشكل أكثر إيجازا، فهو يقول: &#8220;من الممكن تعليم أي إنسان كيف ينحت. أما مايكل أنجلو فكان يجب تعليمه كيف يجب أن لا ينحت. و الأمر ذاته ينطبق على المبرمجين الممتازين&#8221;.
+</p>
+<p>بإمكانك الآن شراء كتاب لتعلم لغة Java فقد تحصل منه على بعض الفائدة. إلا أنك لن تغير حياتك أو خبرتك الفعلية كمبرمج في 24 ساعة أو يوم أو حتى شهر.
+</p>
+<hr/>
+<h2>
+المراجع<br/>
+</h2>
+<div style="direction:ltr;">
+<p>
+Bloom, Benjamin (ed.) <i><a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.amazon.com/exec/obidos/ASIN/034531509X']);" href="http://www.amazon.com/exec/obidos/ASIN/034531509X">Developing Talent in Young People</a></i>, Ballantine, 1985.<br/>Brooks, Fred, <i><a onclick="javascript:_gaq.push(['_trackPageview', '/out/citeseer.nj.nec.com/context/7718/0']);" href="http://citeseer.nj.nec.com/context/7718/0">No Silver Bullets</a></i>, IEEE Computer, vol. 20, no. 4, 1987, p. 10-19.<br/>
+Hayes, John R., <i><a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.amazon.com/exec/obidos/ASIN/0805803092']);" href="http://www.amazon.com/exec/obidos/ASIN/0805803092">Complete Problem Solver</a></i> Lawrence Erlbaum, 1989.<br/>Lave, Jean, <i><a href="http://www.amazon.com/exec/obidos/ASIN/0521357349">Cognition in Practice: Mind, Mathematics, and Culture in Everyday<br/>
+Life</a></i>, Cambridge University Press, 1988.
+</p>
+</div>
+</div>
+</html>
