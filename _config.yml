@@ -1,3 +1,5 @@
 timezone: Europe/Berlin
 markdown: kramdown
 highlighter: rouge
+theme: minima
+title: "Mohamed Yahya / Notes"
