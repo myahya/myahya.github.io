@@ -66,12 +66,7 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <p class="text-center">
-                    <img width="200px" src="images/MohamedYahya-00744.jpg" alt="Mohamed Yahya">
-                </p>
-            </div>
-            <div class="col-md-7">
+                    <img width="200" src="images/MohamedYahya-00744.jpg" style="float:left; margin-right:20px" class="rounded float-left" alt="Mohamed Yahya">
                 <p class="lead">
                     Senior Software Engineer & Research Scientist <br />
                     <a href="https://www.techatbloomberg.com/ai/">AI Group</a>, <a href="https://www.bloomberg.com/company/">Bloomberg</a>
@@ -80,20 +75,36 @@
                     Formerly: Doctoral student @ <a href="https://www.mpi-inf.mpg.de/">Max Planck
         Institute for Informatics</a>,<br/> advised by <a href="https://www.mpi-inf.mpg.de/~weikum/">Gerhard Weikum</a>
                 </p>
-                <!--
                 <p style="font-size:16px">
                     I am broadly interested in the problem of facilitating 
                     user access to knowledge hiding within structured 
-                    data and text corpora.  Semantic parsing [<a href="http://www.aclweb.org/anthology/D12-1035">EMNLP 2012</a>, <a href="publications/qa-over-kb-cikm2013.pdf">CIKM 2013</a>, <a href="publications/quint-abujabal-www2017.pdf">WWW 2017</a>, EMNLP 2017], 
-                    combining text and structured data [<a href="https://dl.acm.org/citation.cfm?id=2835795">WSDM 2016</a>, <a href="http://www.vldb.org/pvldb/vol9/p1521-yahya.pdf">VLDB 2016</a>]. 
-                    I've also played with the fun problem of rever-Jeopardy!:
+                    and textual data. My work lies at the intersection of NLP, IR and Databases. I worked on various approaches to <i>executable semantic
+                    parsing</i> for <i>question answering</i> over large knowledge graphs  [<a href="http://www.aclweb.org/anthology/D12-1035">EMNLP 2012</a>, <a href="publications/qa-over-kb-cikm2013.pdf">CIKM 2013</a>, <a href="publications/quint-abujabal-www2017.pdf">WWW 2017</a>, <a href="publications/quint-demo-abujabal-emnlp2017.pdf">EMNLP 2017</a>]. Because structured sources are never complete and
+                    QA technology will always be imperfect when translating questions into some
+                    formal meaning representation, I've also looked at the problem of
+                    <i>combining structured and textual data</i> to improve the robustness of question answering [<a href="http://www.aclweb.org/anthology/D/D14/D14-1038.pdf">EMNLP 2014</a>, <a href="https://dl.acm.org/citation.cfm?id=2835795">WSDM 2016</a>, <a href="http://www.vldb.org/pvldb/vol9/p1521-yahya.pdf">VLDB 2016</a>, <a href="https://openproceedings.org/2019/conf/edbt/EDBT19_paper_50.pdf">EDBT 2019</a>].<span id="overview-dots">..</span>
+                    <span id="overview-rest" style="display: none"><!--, including
+                    some systems aspects of this problem for efficiency [<a href="https://openproceedings.org/2019/conf/edbt/EDBT19_paper_50.pdf">EDBT 2019</a>].-->
+                    I've also worked on the problem of deploying QA systems starting with
+                    very little training data through a <i>never ending learning</i> approach [<a href="publications/neqa-abujabal-www2018.pdf">WWW 2018</a>].
+                    To help improve the state of the art in factoid QA to match
+                    what actual users ask, I helped release ComQA, a dataset of 
+                    factoid questions gathered from community QA website, annotated with 
+                    answers and paraphrase clusters [<a href="https://www.aclweb.org/anthology/N19-1027">NAACL 2019</a>]. Recently, I've been 
+                    interested in the problem of improving the usability of QA systems based
+                    on semantic parsing through semantically driven auto-completion. The resulting
+                    completion systems complete to those and only those questions that the 
+                    underlying QA system understands, facilitating both <i>discovery</i> and <i>expectation management</i> [<a href="http://sigir.org/sigir2018/">SIGIR 2018</a>, <a href="https://arxiv.org/pdf/1906.09450.pdf">arXiv 2019</a>]. Finally, because
+                    work and all play makes one a dull boy, I played with fun problem of reverse-Jeopardy!:
                     automatically generating Jeopardy! episodes from knowledge
-                    bases [<a href="publications/quiz-questions-from-kb-www2015.pdf">WWW 2015</a>, <a href="https://dl.acm.org/citation.cfm?id=2908210">WebSci 2016</a>, <a href="publications/kq-from-kg-seyler-ictir2017.pdf">ICTIR 2017</a>]. 
-                    My work has touched on information extraction [<a href="http://www.aclweb.org/anthology/D/D14/D14-1038.pdf">EMNLP 2014</a>]. [WWW 2018]
-                    [NAACL 2019]
-                    [SIGIR 2018]
-                </p> -->
-            </div>          
+                    bases [<a href="publications/quiz-questions-from-kb-www2015.pdf">WWW 2015</a>, <a href="https://dl.acm.org/citation.cfm?id=2908210">WebSci 2016</a>, <a href="publications/kq-from-kg-seyler-ictir2017.pdf">ICTIR 2017</a>].</span>
+
+                    <a href="#" id="overview-link">(more)</a>
+
+
+<!--My work has touched on information extraction [<a href="http://www.aclweb.org/anthology/D/D14/D14-1038.pdf">EMNLP 2014</a>]-->
+
+                </p>
         </div>
         <h2 id="publications">Publications</h2>
         <ul class="lead pubs">
@@ -330,6 +341,29 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1100793-1"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let show_less = false;
+
+
+        $("#overview-link").click(function (e) {
+            e.preventDefault();
+            if (show_less) {
+                $("#overview-rest").hide();
+                $("#overview-dots").text("..");
+                $("#overview-link").text("(more)");
+                show_less = false;
+            } else {
+                $("#overview-rest").show();
+                $("#overview-link").text("(less)");
+                $("#overview-dots").text("");
+                show_less = true;
+            }
+        });
+    });
+</script>
+
 
 </body>
 
