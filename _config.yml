@@ -3,3 +3,4 @@ markdown: kramdown
 highlighter: rouge
 theme: minima
 title: "Mohamed Yahya / Notes"
+google_analytics: UA-1100793-1
