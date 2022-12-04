@@ -17,4 +17,4 @@ I am Palestinian. Both of my parents come from the Palestinian villiage of [Inna
 * َمزِع يِمزَعَك
 
 ## Sayings
-* الإنسان ٍرظي بعَكلَه بس ما رظِي برِزِكتَه 
+* الإنسان رظي بعَكلَه بس ما رظِي برِزِكتَه 
