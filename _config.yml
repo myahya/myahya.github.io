@@ -4,3 +4,5 @@ highlighter: rouge
 remote_theme: knhash/jekyllBear
 title: "Mohamed Yahya"
 google_analytics: UA-1100793-1
+gems:
+  - jekyll-feed
