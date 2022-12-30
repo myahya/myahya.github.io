@@ -1,8 +1,6 @@
 timezone: Europe/Berlin
 markdown: kramdown
 highlighter: rouge
-remote_theme: knhash/jekyllBear
+theme: minima
 title: "Mohamed Yahya"
 google_analytics: UA-1100793-1
-gems:
-  - jekyll-feed
