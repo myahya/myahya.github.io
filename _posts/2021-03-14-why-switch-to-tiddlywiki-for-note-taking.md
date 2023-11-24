@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  Why I Switched to TiddlyWiki for Note-taking
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Hash Rank Join (HRJN)
 ---
 # Hash Rank Join (HRJN)
