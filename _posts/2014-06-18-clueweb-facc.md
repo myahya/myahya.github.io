@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Notes on Dealing with the Freebase Annotations of the ClueWeb Corpora (FACC1)
 ---
 
