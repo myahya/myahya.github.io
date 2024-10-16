@@ -3,7 +3,6 @@ layout: post
 title:  Why I Switched to TiddlyWiki for Note-taking
 ---
 
-# Why I Switched to TiddlyWiki for Note-taking
 I need to take lots of notes during my day, mostly related to my day job, research, and hobbies, and to a lesser degree for managing my daily life. Because most of  notes are work-related, I cannot use any system that is hosted by a third party. I also don't want to use multiple systems to do this. 
 
 For a while now, I've been using TiddlyWiki, and it is FANTASTIC. I came across it while researching self-hosted alternatives to RoamResearch, which my Twitter feed tells me is gaining lots of momentum. Many of the things that seem to attract people to RoamResearch seem to have already been in TiddlyWiki for a while, see "[Philosophy of Tiddlers](https://tiddlywiki.com/#Philosophy%20of%20Tiddlers)", and [TiddlyWiki was started back in 2004](https://en.wikipedia.org/wiki/TiddlyWiki). A note in TiddlyWiki terminology is called a *[tiddler](https://tiddlywiki.com/#Tiddlers)*.

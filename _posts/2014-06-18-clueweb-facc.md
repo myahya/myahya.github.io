@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: post
 title: Notes on Dealing with the Freebase Annotations of the ClueWeb Corpora (FACC1)
 ---
 
-#Notes on Dealing with the Freebase Annotations of the ClueWeb Corpora (FACC1)
 
 The FACC1 data is released by Google and distributed by the Lemur project at <http://lemurproject.org/clueweb09/FACC1/> and <http://lemurproject.org/clueweb12/FACC1/>.
 

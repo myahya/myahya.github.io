@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: post
 title: Hash Rank Join (HRJN)
 ---
-# Hash Rank Join (HRJN)
+
 Ilyas et al. (2003) presents a scheme for supporting top-_k_ joins in relational databases. The input to the scheme is a set of ranked relations, a join condition, and a monotone score combining function. The paper is an important one, and is nice an easy to read.
 
 The paper then presents how this scheme can be translated into physical operators. The description of the Hash Rank Join (HRJN) operation contains an easy to fix bug for the _GetNext()_ operation shown in Table 2. We show the bug here, and suggest a fix.
@@ -53,6 +53,7 @@ whereas the join result
     ----------------------
      2    | 3     | 6
     ----------------------
+
 canot be emitted, since its score is 6, which is lower than 7, the minumum possible value for _T_.
 
 ## Fix
