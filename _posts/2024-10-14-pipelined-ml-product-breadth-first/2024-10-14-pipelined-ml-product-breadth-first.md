@@ -3,7 +3,7 @@ layout: post
 title: Building a Pipelined ML Product? Start Breadth-first
 ---
 
-Search and natural language understanding systems (products) are inherently pipelined. Figure 1 below shows an example of such a pipelined system: an extractive question answering system: it takes a user question a produces an answer based on a given document collection.
+Search and natural language understanding systems are inherently pipelined. Figure 1 below shows an example of such a pipelined system, an extractive question answering system. The system takes a user question a produces an answer based on a given document collection.
 
 
 <p>
@@ -20,14 +20,14 @@ One can take a *breadth-first* or a *depth-first* approach when building such sy
 There are three reasons why I advocate for a breadth-first approach, at least early on:
 1. Anytime approach to product building
 3. Error dynamics in a pipeline
-4. Perfection of any one stage might not be needed
+4. Perfection in any one stage might not be needed
 
 ## Anytime Approach to Product Building
-An *[anytime algorithm](https://en.wikipedia.org/wiki/Anytime_algorithm)* is one "that can return a valid solution to a problem even if it is interrupted before it ends. The algorithm is expected to find better and better solutions the longer it keeps running."
+"Anytime approach" is inspired by the concept of an *[anytime algorithm](https://en.wikipedia.org/wiki/Anytime_algorithm)* (aka interruptible algorithm), which is one "that can return a valid solution to a problem even if it is interrupted before it ends. The algorithm is expected to find better and better solutions the longer it keeps running.".  When building a product, you should have something that is demonstrably getting better over time.
 
 When building a product, your ultimate goal is typically to have something useful out as soon as possible, get feedback on that, and iterate. What is "useful" is often a function of time: a demo, a prototype, a proof-of-concept, an MVP, a mature product, etc. Feedback can come from colleagues, managers, investors, testers, customers, etc. 
 
-The reality of life is that people around you need to see progress through something concrete (i) to understand the current status, (ii) give feedback, (iii) make plans and (iv) for their own peace of mind. Consider the following scenario: you're tasked with building a QA system of the type described at the top of this note. A few months pass, a (senior) manager asks for a status update where they're told "we're almost done with perfecting first-stage retrieval". The first two questions will probably be: "what impact will this have on the larger system?" and "can I play with a prototype?". 
+The reality of life is that people around you need to see progress through something concrete (i) to understand the current status, (ii) give feedback, (iii) make plans and (iv) for their own peace of mind. Consider the following scenario: you're tasked with building a QA system of the type described at the top of this note. A few months pass, a (senior) manager 'interrupts' you and ask for a status update where they're told "we're almost done with perfecting first-stage retrieval". The first two questions will probably be: "what impact will this have on the larger system?" and "can I play with a prototype?".
 
 To be clear, no real progress is possible without spending enough time on uninterrupted, focused depth-first work. Also, no real progress is possible without lots of failures if you're doing something interesting/challenging. The message here is that starting breadth-first allows you to show something useful, even if imperfect, early on. It also allows you to justify any depth-first investments by re-integrating their outcomes into the end-to-end system you built early on.
 
